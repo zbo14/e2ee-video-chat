@@ -1,0 +1,73 @@
+{
+  "name": "e2ee-video-chat",
+  "version": "0.0.0",
+  "description": "End-to-end encrypted video chat with WebRTC insertable streams",
+  "private": true,
+  "author": {
+    "name": "Zachary Balder"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "dev": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "bs58": "4.0.1",
+    "core-js": "^3.6.5",
+    "electron": "10.1.2",
+    "uuid": "8.3.0",
+    "vue": "^3.0.0-0",
+    "ws": "7.3.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0-0",
+    "babel-eslint": "^10.1.0",
+    "electron": "11.0.0",
+    "electron-devtools-installer": "^3.1.0",
+    "eslint": "7.9.0",
+    "eslint-config-standard": "14.1.1",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "vue-cli-plugin-electron-builder": "~2.0.0-rc.4",
+    "worker-loader": "3.0.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "_id": "video-chat@0.0.0",
+  "keywords": [
+    "electron",
+    "insertable streams",
+    "video chat",
+    "webrtc"
+  ],
+  "license": "MIT"
+}
